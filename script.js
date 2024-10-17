@@ -35,8 +35,25 @@ const memberEmail = ['kcyg4y4yve@email.net',
          esito = `l'email ${userEmail} corrisponde e sta eseguendo l ' accesso`
 
     } 
-    
+
     console.log(`buongiorno ${nome} ${esito}`)
 
 
     // ============================================================================================================================================================
+
+    //  Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+    //  Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+    let aiNumber = Math.floor(6 * Math.random()) + 1
+
+    let userNumber = Math.floor(6 * Math.random()) + 1
+
+    let result = ` CON IL NUMERO ${aiNumber} PER ENTRAMBI , E' UN PAREGGIO`
+
+    if( aiNumber > userNumber) {
+        result = ` CON UN ${aiNumber} CONTRO ${userNumber} , VINCE IL PC `
+    } else if ( aiNumber < userNumber){ 
+         result = ` CON UN ${userNumber} CONTRO ${aiNumber} , HAI VINTO `
+    }
+
+    console.log(result)
