@@ -44,9 +44,9 @@ const memberEmail = ['kcyg4y4yve@email.net',
     //  Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
     //  Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-    let aiNumber = Math.floor(6 * Math.random()) + 1
+    const aiNumber = Math.floor(6 * Math.random()) + 1
 
-    let userNumber = Math.floor(6 * Math.random()) + 1
+    const userNumber = Math.floor(6 * Math.random()) + 1
 
     let result = ` CON IL NUMERO ${aiNumber} PER ENTRAMBI , E' UN PAREGGIO`
 
